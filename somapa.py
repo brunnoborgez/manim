@@ -15,7 +15,7 @@ class ProgressaoAritmetica(Scene):
 
         inicio = MathTex( 
             '(\ ','a_{1}', ',', ' \ a_{2}',  ',', ' \ a_{3}', ',', ' \ a_{4}',
-            ',', '\ \dots',  ',', ' \ a_{n}', ' \ )', font_size = 70)
+            ',', '\ \dots',  ',', 'a_{n-2}', ',', 'a_{n-1}', ',',' \ a_{n}', ' \ )', font_size = 70)
 
         # definindo os nomes dos termos da sequencia e tamanho da fonte 
 
@@ -333,3 +333,5 @@ class ProgressaoAritmetica(Scene):
             FadeTransform(formula_0[14], an_branco),
             FadeTransform(formula_1[14], a1_verde), 
             FadeIn(sinal_soma[6]))
+        
+        self.wait(4)
